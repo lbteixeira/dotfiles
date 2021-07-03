@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/bretx/Projects/thesis/chapters'
-let g:netrw_dirhist_2='/home/bretx/Projects/thesis/chapters/chapter4'
-let g:netrw_dirhist_1='/home/bretx/Projects/thesis/chapters/chapter4/simplified'
