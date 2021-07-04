@@ -27,7 +27,7 @@ if ! shopt -oq posix; then
 fi
 
 # Include directories to PATH
-export PATH=/home/bretx/.local/bin:$PATH
+export PATH=$PATH:/home/bretx/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 
 prompt_git() {
