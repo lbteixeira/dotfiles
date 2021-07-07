@@ -1,13 +1,14 @@
 # Bash
-alias ll='ls -goh --color=auto'
-alias la='ls -A --color=auto'
+alias ll='exa -lh --group-directories-first'
+alias la='exa -a --group-directories-first'
+alias laa='exa -lha --group-directories-first --git-ignore'
+alias ls='exa'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-alias ls='ls --color=auto'
 alias ss='source $HOME/.bashrc'
 alias sa='source $HOME/.bash_aliases'
 alias cl='clear'
@@ -20,6 +21,7 @@ alias mo='sudo mount /dev/sda '
 alias umo='sudo umount '
 alias inst='sudo apt-get install '
 alias remove='sudo apt-get remove '
+alias cat='batcat '
 
 # Git
 alias ga='git add .'
@@ -34,6 +36,7 @@ alias gcl='git clone '
 alias gup='git push'
 alias gdown='git pull'
 alias gl='git log'
+alias lz='lazygit'
 
 # Edit
 alias bs='nvim $HOME/.bashrc'
