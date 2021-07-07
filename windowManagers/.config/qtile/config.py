@@ -65,13 +65,11 @@ for i in groups:
         ])
 
 gruv_colors = ["#665c54", "#ebdbb2", "#3b4252", "#fabd2f", "#504945"]
-layout_theme = {"border_width": 2,
-                "margin": 5,
-                "border_focus": gruv_colors[1],
-                "border_normal": gruv_colors[0]}
 
 layouts = [
-    layout.Columns(**layout_theme),
+    layout.Columns(border_width=2, margin=5, margin_on_single=5, \
+                   border_focus=gruv_colors[1], border_normal=gruv_colors[0], \
+                   insert_position=1, border_on_single=True),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
