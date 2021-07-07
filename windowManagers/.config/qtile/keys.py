@@ -33,6 +33,9 @@ def keys() -> List:
         Key([mod, "control"], "k", lazy.layout.grow_up()),
         Key([mod], "n", lazy.layout.normalize()),
 
+        Key([mod, "mod1"], "h", lazy.layout.swap_column_left()),
+        Key([mod, "mod1"], "l", lazy.layout.swap_column_right()),
+
         # Toggle between split and unsplit sides of stack.
         # Split = all windows displayed
         # Unsplit = 1 window displayed, like Max layout, but still with
@@ -66,7 +69,7 @@ def keys() -> List:
         Key([mod], "equal", lazy.spawn("amixer set 'Master' 2%+")),
         Key([mod], "minus", lazy.spawn("amixer set 'Master' 2%+")),
 
-        Key([mod, "mod1"], "l", lazy.spawn("slock")),
+        Key([mod, "mod1"], "p", lazy.spawn("slock")),
         ]
 
     return keys
