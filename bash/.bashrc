@@ -29,86 +29,9 @@ fi
 # Include directories to PATH
 export PATH=$PATH:/home/bretx/.local/bin
 export PATH=$PATH:/usr/local/go/bin
+export STARSHIP_CONFIG=~/.config/starship/config.toml
 
-prompt_git() {
-	local s='';
-	local branchName='';
-
-	# Check if the current directory is in a Git repository.
-	git rev-parse --is-inside-work-tree &>/dev/null || return;
-
-	# Check for what branch we’re on.
-	# Get the short symbolic ref. If HEAD isn’t a symbolic ref, get a
-	# tracking remote branch or tag. Otherwise, get the
-	# short SHA for the latest commit, or give up.
-	branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
-		git describe --all --exact-match HEAD 2> /dev/null || \
-		git rev-parse --short HEAD 2> /dev/null || \
-		echo '(unknown)')";
-
-		# Check for uncommitted changes in the index.
-	if ! $(git diff --quiet --ignore-submodules --cached); then
-		s+='';
-	fi;
-	# Check for unstaged changes.
-	if ! $(git diff-files --quiet --ignore-submodules --); then
-		s+='';
-	fi;
-	# Check for untracked files.
-	if [ -n "$(git ls-files --others --exclude-standard)" ]; then
-		s+='';
-	fi;
-	# Check for stashed files.
-	if $(git rev-parse --verify refs/stash &>/dev/null); then
-		s+='';
-	fi;
-
-	[ -n "${s}" ] && s=" [${s}]";
-
-	echo -e "${1} ${branchName}${2}${s}${1}";
-}
-
-if tput setaf 1 &> /dev/null; then
-	tput sgr0; # reset colors
-	bold=$(tput bold);
-	reset=$(tput sgr0);
-	# Solarized colors, taken from http://git.io/solarized-colors.
-	black=$(tput setaf 0);
-	blue=$(tput setaf 33);
-	cyan=$(tput setaf 37);
-	green=$(tput setaf 64);
-	orange=$(tput setaf 166);
-	purple=$(tput setaf 125);
-	red=$(tput setaf 124);
-	violet=$(tput setaf 61);
-	white=$(tput setaf 15);
-	yellow=$(tput setaf 136);
-else
-	bold='';
-	reset="\e[0m";
-	black="\e[1;30m";
-	blue="\e[1;34m";
-	cyan="\e[1;36m";
-	green="\e[1;32m";
-	orange="\e[1;33m";
-	purple="\e[1;35m";
-	red="\e[1;31m";
-	violet="\e[1;35m";
-	white="\e[1;37m";
-	yellow="\e[1;33m";
-fi;
-
-# Set the terminal title and prompt.
-PS1="\[\033]0;\W\007\]";
-#PS1+="\[${bold}\]\n";
-PS1+="\[${blue}\][";
-PS1+="\[${white}\]\u";
-PS1+="\[${yellow}\]  ";
-PS1+="\[${white}\]\w";
-PS1+="\[${blue}\]] ";
-PS1+="\$(prompt_git \"\[${yellow}\]\" \"\[${blue}\]\")";
-PS1+="\n";
-PS1+="\[${white}\] \[${reset}\]"; 
-export PS1;
 alias config='/usr/bin/git --git-dir=/home/bretx/.cfg/ --work-tree=/home/bretx' 
 . "$HOME/.cargo/env"
+
+eval "$(starship init bash)"
