@@ -31,7 +31,4 @@ export PATH=$PATH:/home/bretx/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 export STARSHIP_CONFIG=~/.config/starship/config.toml
 
-alias config='/usr/bin/git --git-dir=/home/bretx/.cfg/ --work-tree=/home/bretx' 
-. "$HOME/.cargo/env"
-
 eval "$(starship init bash)"

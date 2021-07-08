@@ -69,3 +69,7 @@ alias vidic='source ~/.venv/idic/bin/activate'
 alias vgeo='source ~/.venv/geometrio/bin/activate'
 alias vfin='source ~/.venv/finitus/bin/activate'
 alias vident='source ~/.venv/identification/bin/activate'
+
+alias config='/usr/bin/git --git-dir=/home/bretx/.cfg/ --work-tree=/home/bretx' 
+. "$HOME/.cargo/env"
+
