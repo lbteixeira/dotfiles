@@ -1,12 +1,10 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
-# Replace the "❯" symbol in the prompt with "➜"
-[character]                            # The name of the module we are configuring is "character"
-success_symbol = "[](bold dimmed green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-error_symbol = "[✗](bold red)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+[character]
+success_symbol = "[ ](bold dimmed green)"
+error_symbol = "[✗](bold red)"
 
-# Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
 
@@ -25,6 +23,8 @@ truncate_to_repo = true
 style = "bold dimmed green"
 truncation_symbol = ".../"
 home_symbol = " "
+read_only = "  "
+read_only_style = "white"
 
 [git_branch]
 symbol = " "
