@@ -74,7 +74,7 @@ To refresh the repository, run "package-refresh-contents".
 
 ** Fonts and themes
 #+begin_src emacs-lisp
-(set-face-attribute 'default nil :font "mononoki" :height 170)
+(set-face-attribute 'default nil :font "Roboto Mono Nerd Font" :height 100)
 
 (use-package doom-themes
   :init (load-theme 'doom-dracula t))

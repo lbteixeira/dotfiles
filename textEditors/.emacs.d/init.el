@@ -33,7 +33,7 @@
 (setq visible-bell t)
 (setq-default fill-column 100)
 
-(set-face-attribute 'default nil :font "mononoki" :height 170)
+(set-face-attribute 'default nil :font "Roboto Mono Nerd Font" :height 100)
 
 (use-package doom-themes
   :init (load-theme 'doom-dracula t))
@@ -555,16 +555,3 @@
 
 (provide 'init)
 ;;; init.el ends here
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(yasnippet-snippets writeroom-mode which-key undo-tree treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil smartparens image-dired+ ranger rainbow-delimiters elpy python-mode counsel-projectile projectile pdf-tools toc-org org-superstar evil-magit magit dap-mode general lsp-treemacs lsp-ivy lsp-ui lsp-mode auctex ivy-rich evil-iedit-state helpful flycheck evil-multiedit evil-snipe evil-collection evil dashboard counsel company avy tab-jump-out doom-modeline all-the-icons doom-themes use-package)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
