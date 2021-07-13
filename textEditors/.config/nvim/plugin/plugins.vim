@@ -31,5 +31,6 @@ Plug 'szw/vim-maximizer'
 Plug 'luochen1990/rainbow'
 Plug 'tmhedberg/SimpylFold'
 Plug 'junegunn/goyo.vim'
+Plug 'cespare/vim-toml'
 
 call plug#end()
