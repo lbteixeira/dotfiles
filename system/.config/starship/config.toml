@@ -45,3 +45,7 @@ show_always = false
 
 [cmd_duration]
 disabled = true
+
+[golang]
+disabled = false
+symbol = "ﳑ "
