@@ -10,6 +10,8 @@ source $HOME/.config/nvim/plugin/coc.vim
 source $HOME/.config/nvim/plugin/vimspector.vim
 source $HOME/.config/nvim/plugin/rainbow.vim
 source $HOME/.config/nvim/plugin/folding.vim
+source $HOME/.config/nvim/plugin/max.vim
+source $HOME/.config/nvim/plugin/vifm.vim
 
 "Source on save
 au! BufWritePost $MYVIMRC source %
