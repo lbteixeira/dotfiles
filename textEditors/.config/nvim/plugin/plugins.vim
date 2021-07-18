@@ -33,5 +33,6 @@ Plug 'luochen1990/rainbow'
 Plug 'tmhedberg/SimpylFold'
 Plug 'junegunn/goyo.vim'
 Plug 'cespare/vim-toml'
+Plug 'nathanaelkane/vim-indent-guides'
 
 call plug#end()
