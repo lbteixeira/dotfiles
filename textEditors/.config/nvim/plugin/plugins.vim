@@ -34,5 +34,6 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'junegunn/goyo.vim'
 Plug 'cespare/vim-toml'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
