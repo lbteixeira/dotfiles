@@ -29,6 +29,8 @@ fi
 # Include directories to PATH
 export PATH=$PATH:/home/bretx/.local/bin
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/bretx/Projects/granoo/install/GranOO/3.0/bin
 export STARSHIP_CONFIG=~/.config/starship/config.toml
+export CMAKE_PREFIX_PATH=/home/bretx/Projects/granoo/install/GranOO/3.0/
 
 eval "$(starship init bash)"

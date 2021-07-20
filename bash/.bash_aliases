@@ -51,6 +51,7 @@ alias d='clear && cd $HOME/Documents && ll'
 alias th='clear && cd $HOME/Projects/thesis && ll'
 alias phd='clear && cd ~/Documents/phd && ll'
 alias dot='clear && cd $HOME/dotfiles && ll'
+alias granoo='clear && cd $HOME/Projects/granoo && ll'
 alias cc='clear && cd && ll'
 
 # Programs
