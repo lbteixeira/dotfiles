@@ -45,3 +45,4 @@ set shortmess+=c " Don't pass messages to |ins-completion-menu|.
 let g:tex_flavor='latex'
 
 set foldlevelstart=1
+
