@@ -13,6 +13,7 @@ source $HOME/.config/nvim/plugin/folding.vim
 source $HOME/.config/nvim/plugin/max.vim
 source $HOME/.config/nvim/plugin/vifm.vim
 source $HOME/.config/nvim/plugin/which-key.vim
+source $HOME/.config/nvim/plugin/airline.vim
 
 "Source on save
 au! BufWritePost $MYVIMRC source %

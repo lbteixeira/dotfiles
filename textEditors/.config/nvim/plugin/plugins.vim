@@ -5,7 +5,7 @@ Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'mbbill/undotree'
 Plug 'gruvbox-community/gruvbox'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'vifm/vifm.vim'
 
@@ -35,5 +35,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'cespare/vim-toml'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'liuchengxu/vim-which-key'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
