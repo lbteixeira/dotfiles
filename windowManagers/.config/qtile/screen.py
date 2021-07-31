@@ -5,9 +5,9 @@ from libqtile.config import Screen
 
 mod = "mod4"
 terminal = "st"
-main_font = "Fira Mono Nerd Font"
+main_font = "Roboto Mono Nerd Font"
 main_font_bold = "Fira Mono Nerd Font Bold"
-gruv_colors = ["#665c54", "#ebdbb2", "#3b4252", "#fabd2f", "#504945"]
+gruv_colors = ["#665c54", "#ebdbb2", "#3b4252", "#fabd2f", "#504945","#fabd2f"]
 
 def screen() -> Screen:
     
@@ -35,8 +35,8 @@ def screen() -> Screen:
                 highlight_method = "line",
                 this_current_screen_border = gruv_colors[1],
                 this_screen_border = gruv_colors[1],
-                other_current_screen_border = gruv_colors[1],
-                other_screen_border = gruv_colors[4],
+                other_current_screen_border = gruv_colors[5],
+                other_screen_border = gruv_colors[5],
                 fontsize = 20,
                 foreground = gruv_colors[1],
                 background = gruv_colors[0]),
