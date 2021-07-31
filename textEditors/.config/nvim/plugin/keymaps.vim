@@ -15,8 +15,6 @@ map <Leader>tt :new term://bash<CR>
 imap jj <Esc>
 nnoremap k gk
 nnoremap j gj
-nnoremap cw ciw
-nnoremap dw diw
 nnoremap <C-s> :w<CR>
 nnoremap <Leader>s :w<CR>
 nnoremap <Leader>bb :Buffers<CR>
