@@ -5,7 +5,6 @@ Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'mbbill/undotree'
 Plug 'gruvbox-community/gruvbox'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-"Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'vifm/vifm.vim'
 
