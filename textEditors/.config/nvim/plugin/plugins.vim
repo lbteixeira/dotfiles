@@ -37,5 +37,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'liuchengxu/vim-which-key'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
