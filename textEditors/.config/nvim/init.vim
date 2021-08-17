@@ -14,6 +14,8 @@ source $HOME/.config/nvim/plugin/max.vim
 source $HOME/.config/nvim/plugin/vifm.vim
 source $HOME/.config/nvim/plugin/which-key.vim
 source $HOME/.config/nvim/plugin/airline.vim
+source $HOME/.config/nvim/plugin/signify.vim
+source $HOME/.config/nvim/plugin/md-preview.vim
 
 "Source on save
 au! BufWritePost $MYVIMRC source %

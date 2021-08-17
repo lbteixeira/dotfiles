@@ -4,6 +4,7 @@ let g:which_key_centered= 0
 let g:which_key_position = 'botright' " topleft
 let g:which_key_use_floating_win = 0
 let g:which_key_floating_relative_win= 0
+let g:which_key_sep = '→ '
 
 " Hide status line
 autocmd! FileType which_key
