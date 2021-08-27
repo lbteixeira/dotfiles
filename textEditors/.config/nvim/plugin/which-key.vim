@@ -48,8 +48,4 @@ let g:which_key_map['s'] = [ ':w<CR>' , 'save']
 let g:which_key_map['m'] = [ ':MaximizerToggle' , 'maximize']
 
 call which_key#register('<Space>', "g:which_key_map")
- 
- 
- 
- 
- 
+

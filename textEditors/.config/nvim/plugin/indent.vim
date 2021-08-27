@@ -1,7 +1,10 @@
-"https://github.com/nathanaelkane/vim-indent-guides
+"let g:indentLine_setColors = 0
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_indentLevel = 5
+let g:indentLine_fileTypeExclude = []
+let g:indentLine_fileTypeExclude = ['help', 'terminal']
+let g:indentLine_bufNameExclude = ['[vV][iI][fF][mM].*']
+let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_leadingSpaceEnabled = 0
 
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'vifm', 'vim-which-key']
-
+nnoremap <Leader>ig :IndentLinesToggle<CR>
