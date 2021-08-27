@@ -1,7 +1,7 @@
 # Bash
-alias ll='exa -lh --group-directories-first'
+alias ll='exa -lh --icons --group-directories-first'
 alias la='exa -a --group-directories-first'
-alias laa='exa -lha --group-directories-first --git-ignore'
+alias laa='exa -lha --icons --group-directories-first --git-ignore'
 alias ls='exa'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -21,6 +21,7 @@ alias umo='sudo umount '
 alias inst='sudo apt-get install '
 alias remove='sudo apt-get remove '
 alias cat='batcat '
+alias tree='exa --tree'
 
 # Git
 alias ga='git add .'
@@ -63,12 +64,6 @@ alias patch='patch -p1 <'
 alias comp='sudo make clean install'
 alias fshow='sxiv -t *'
 alias stow='stow *'
-
-# Venvs
-alias vidic='source ~/.venv/idic/bin/activate'
-alias vgeo='source ~/.venv/geometrio/bin/activate'
-alias vfin='source ~/.venv/finitus/bin/activate'
-alias vident='source ~/.venv/identification/bin/activate'
 
 alias tt='./tests.sh'
 alias bb='./build.sh'
