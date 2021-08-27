@@ -1,9 +1,12 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'jackguo380/vim-lsp-cxx-highlight'
+"Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'mbbill/undotree'
+Plug 'sheerun/vim-polyglot'
 Plug 'gruvbox-community/gruvbox'
+Plug 'rakr/vim-one'
+Plug 'joshdick/onedark.vim'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'preservim/nerdcommenter'
 Plug 'vifm/vifm.vim'
@@ -23,6 +26,7 @@ Plug 'honza/vim-snippets'
 
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/tagbar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'justinmk/vim-sneak'
