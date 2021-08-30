@@ -24,6 +24,7 @@ nnoremap <Leader>l :Lines<CR>
 nnoremap <Leader>bl :BLines<CR>
 nnoremap <Leader>tc :tabclose<CR>
 nnoremap <Leader>pi :PlugInstall<CR>
+nnoremap <Leader><Leader> <C-^>
 nnoremap <F12> :Goyo<CR>
 nnoremap <F6> :set spell!<CR>
 nnoremap <S-Tab> :bnext<CR>

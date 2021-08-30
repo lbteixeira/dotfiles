@@ -13,10 +13,11 @@ set smartindent
 "Line numbers
 set number
 set relativenumber
-"set cursorline
+set cursorline
 
 set nohlsearch "Stop highlighting after search is completed
 set hidden "Keeps buffers open on background
+set confirm "Asks for confirmation when :q is going to fail
 
 "History keeping options
 set noswapfile
