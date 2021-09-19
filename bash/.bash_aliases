@@ -20,7 +20,7 @@ alias mo='sudo mount /dev/sda ~/Desktop/usb'
 alias umo='sudo umount '
 alias inst='sudo pacman -S '
 alias remove='sudo pacman -R '
-alias cat='batcat '
+alias cat='bat '
 alias tree='exa --tree'
 
 # Git

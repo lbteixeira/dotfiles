@@ -27,11 +27,11 @@ if ! shopt -oq posix; then
 fi
 
 # Include directories to PATH
-export PATH=$PATH:/home/bretx/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/bretx/Projects/granoo/install/GranOO/3.0/bin
+export PATH=$PATH:$HOME/Projects/granoo/install/GranOO/3.0/bin
 export STARSHIP_CONFIG=~/.config/starship/config.toml
-export CMAKE_PREFIX_PATH=/home/bretx/Projects/granoo/install/GranOO/3.0/
+export CMAKE_PREFIX_PATH=$HOME/Projects/granoo/install/GranOO/3.0/
 export EDITOR='nvim'
 
 eval "$(starship init bash)"
