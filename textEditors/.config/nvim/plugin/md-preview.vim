@@ -75,4 +75,3 @@ let g:mkdp_page_title = '「${name}」'
 let g:mkdp_filetypes = ['markdown']
 
 nnoremap <leader>pm <Plug>MarkdownPreviewToggle
-

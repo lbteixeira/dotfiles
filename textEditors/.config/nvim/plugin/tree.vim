@@ -1,4 +1,3 @@
-"For NERD commenter
 filetype plugin on
 
 "NERDTree

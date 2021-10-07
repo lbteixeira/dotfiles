@@ -17,15 +17,8 @@ nnoremap k gk
 nnoremap j gj
 nnoremap <C-s> :w<CR>
 nnoremap <Leader>s :w<CR>
-nnoremap <Leader>bb :Buffers<CR>
-nnoremap <Leader>g :Rg<CR>
-nnoremap <Leader>f :Files<CR>
-nnoremap <Leader>l :Lines<CR>
-nnoremap <Leader>bl :BLines<CR>
-nnoremap <Leader>tc :tabclose<CR>
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader><Leader> <C-^>
-nnoremap <F12> :Goyo<CR>
 nnoremap <F6> :set spell!<CR>
 nnoremap <S-Tab> :bnext<CR>
 

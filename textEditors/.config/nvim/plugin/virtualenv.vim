@@ -1,1 +1,1 @@
-let g:virtualenv_directory = "/home/bretx/.venv"
+let g:virtualenv_directory = expand("~/.venv")
