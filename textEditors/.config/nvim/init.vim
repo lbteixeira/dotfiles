@@ -17,6 +17,7 @@ source $HOME/.config/nvim/plugin/md-preview.vim
 source $HOME/.config/nvim/plugin/tagbar.vim
 source $HOME/.config/nvim/plugin/tree.vim
 source $HOME/.config/nvim/plugin/fzf.vim
+source $HOME/.config/nvim/plugin/polyglot.vim
 "Source on save
 au! BufWritePost $MYVIMRC source %
 
