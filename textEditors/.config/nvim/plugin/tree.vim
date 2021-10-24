@@ -9,3 +9,4 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
 
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+nnoremap <leader>n :NERDTreeToggle<CR>
