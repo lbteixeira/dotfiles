@@ -6,12 +6,11 @@ from libqtile.config import Key
 from libqtile.lazy import lazy
 
 mod = "mod4"
-terminal = "st"
+terminal = "alacritty"
 
 def keys() -> List:
 
     keys = [
-        # Switch between windows
         Key([mod], "h", lazy.layout.left()),
         Key([mod], "l", lazy.layout.right()),
         Key([mod], "j", lazy.layout.down()),
@@ -19,8 +18,6 @@ def keys() -> List:
         Key([mod, "mod1"], "space",
             lazy.widget["keyboardlayout"].next_keyboard()),
 
-        # Move windows left/right columns or up/down in current stack.
-        # Moving out of range in Columns layout will create new column.
         Key([mod, "shift"], "h", lazy.layout.shuffle_left()),
         Key([mod, "shift"], "l", lazy.layout.shuffle_right()),
         Key([mod, "shift"], "j", lazy.layout.shuffle_down()),
@@ -44,7 +41,6 @@ def keys() -> List:
 
         Key([mod], "Return", lazy.spawn(terminal)),
 
-        # Toggle between different layouts as defined below
         Key([mod], "space", lazy.next_layout()),
         Key([mod], "Tab", lazy.screen.toggle_group()),
         Key(["mod1"], "Tab", lazy.next_screen()),
@@ -55,19 +51,18 @@ def keys() -> List:
 
         Key([mod], "r", lazy.spawncmd()),
 
-        # Key([mod], "p", lazy.spawn("dmenu_run -n -m 0 -l 10")),
-        Key([mod], "p", lazy.spawn("dmenu_run -h 34")),
+        Key([mod], "p", lazy.spawn("dmenu_run -c")),
         Key([mod], "f", lazy.spawn("firefox")),
-        Key([mod], "v", lazy.spawn(terminal + " vifm")),
         Key([mod], "z", lazy.spawn("zathura")),
         Key([mod], "q", lazy.spawn("qutebrowser")),
+        Key([mod], "e", lazy.spawn("thunar")),
 
         Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q set Master 2%+")),
         Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q set Master 2%-")),
         Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
 
-        Key([mod], "equal", lazy.spawn("amixer set 'Master' 2%+")),
-        Key([mod], "minus", lazy.spawn("amixer set 'Master' 2%+")),
+        Key([mod], "equal", lazy.spawn("amixer set 'Master' 5%+")),
+        Key([mod], "minus", lazy.spawn("amixer set 'Master' 5%+")),
 
         Key([mod, "mod1"], "p", lazy.spawn("slock")),
         ]

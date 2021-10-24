@@ -137,6 +137,9 @@ floating_layout = layout.Floating(float_rules=[
     {'wname': 'branchdialog'},
     {'wname': 'pinentry'},
     {'wmclass': 'ssh-askpass'},
+    {'wmclass': 'nitrogen'},
+    {'wmclass': 'Thunar'},
+    {'wname': 'Enter LaTeX Formula - TexText 1.2.0'},
 ])
 
 auto_fullscreen = True
