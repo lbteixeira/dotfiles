@@ -139,7 +139,13 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'ssh-askpass'},
     {'wmclass': 'nitrogen'},
     {'wmclass': 'Thunar'},
+    {'wmclass': 'galculator'},
+    {'wmclass': 'viewnior'},
+    {'wmclass': 'ij-ImageJ'},
+    {'wmclass': 'Msgcompose'},
+    {'wmclass': 'org.gnome.DejaDup'},
     {'wname': 'Enter LaTeX Formula - TexText 1.2.0'},
+    {'wname': 'Feed Subscriptions'},
 ])
 
 auto_fullscreen = True
