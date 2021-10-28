@@ -38,5 +38,7 @@ eval "$(starship init bash)"
 
 export WORKON_HOME=~/.venv/
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export VIRTUALENVWRAPPER_VIRTUALENV=~/.local/bin/virtualenv
+source ~/.local/bin/virtualenvwrapper.sh
+
 . "$HOME/.cargo/env"
