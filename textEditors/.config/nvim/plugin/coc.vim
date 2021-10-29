@@ -92,3 +92,6 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 endif
 
 nnoremap <Leader>ch :CocCommand clangd.switchSourceHeader<CR>
+
+" Trigger snippet expand
+imap <C-l> <Plug>(coc-snippets-expand)
