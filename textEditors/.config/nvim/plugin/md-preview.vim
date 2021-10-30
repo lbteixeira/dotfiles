@@ -74,4 +74,4 @@ let g:mkdp_page_title = '「${name}」'
 " these filetypes will have MarkdownPreview... commands
 let g:mkdp_filetypes = ['markdown']
 
-nnoremap <leader>pm <Plug>MarkdownPreviewToggle
+"nnoremap <leader>pm <Plug>MarkdownPreviewToggle

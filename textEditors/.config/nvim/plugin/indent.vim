@@ -7,4 +7,4 @@ let g:indentLine_bufNameExclude = ['[vV][iI][fF][mM].*']
 let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_leadingSpaceEnabled = 0
 
-nnoremap <Leader>ig :IndentLinesToggle<CR>
+"nnoremap <Leader>ig :IndentLinesToggle<CR>

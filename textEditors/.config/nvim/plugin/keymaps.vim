@@ -10,14 +10,13 @@ noremap <silent> <M-l> :vertical resize +3<CR>
 noremap <silent> <M-j> :resize -3<CR>
 noremap <silent> <M-k> :resize +3<CR>
 
-map <Leader>tt :new term://bash<CR>
+map <Leader>t :new term://bash<CR>
 
 imap jj <Esc>
 nnoremap k gk
 nnoremap j gj
 nnoremap <C-s> :w<CR>
 nnoremap <Leader>s :w<CR>
-nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader><Leader> <C-^>
 nnoremap <F6> :set spell!<CR>
 nnoremap <S-Tab> :bnext<CR>
