@@ -47,19 +47,19 @@ inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <C-l> <Plug>(coc-snippets-expand)
 
 nnoremap <leader>cd :call <SID>show_documentation()<CR>
-nnoremap <leader>cr <Plug>(coc-rename)
+nmap <leader>cr <Plug>(coc-rename)
 
-nnoremap <leader>cp <Plug>(coc-diagnostic-prev)
-nnoremap <leader>cn <Plug>(coc-diagnostic-next)
-nnoremap <leader>cD :CocDiagnostics<CR>
+nmap <leader>cp <Plug>(coc-diagnostic-prev)
+nmap <leader>cn <Plug>(coc-diagnostic-next)
+nmap <leader>cD :CocDiagnostics<CR>
 
-nnoremap <silent> gd <Plug>(coc-definition)
-nnoremap <silent> gy <Plug>(coc-type-definition)
-nnoremap <silent> gi <Plug>(coc-implementation)
-nnoremap <silent> gr <Plug>(coc-references)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
-nnoremap <leader>ca  <Plug>(coc-codeaction)
-nnoremap <leader>cf  <Plug>(coc-fix-current)
+nmap <leader>ca  <Plug>(coc-codeaction)
+nmap <leader>cf  <Plug>(coc-fix-current)
 nnoremap <Leader>ch :CocCommand clangd.switchSourceHeader<CR>
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.

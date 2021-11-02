@@ -45,4 +45,7 @@ set shortmess+=c " Don't pass messages to |ins-completion-menu|.
 "Always open latex files correctly
 let g:tex_flavor='latex'
 
+set foldenable 
+set foldmethod=indent
 set foldlevelstart=1
+set foldnestmax=2

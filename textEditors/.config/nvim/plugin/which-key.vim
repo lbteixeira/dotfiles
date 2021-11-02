@@ -56,5 +56,6 @@ let g:which_key_map['m'] = [ ':MaximizerToggle' , 'maximize']
 let g:which_key_map['l'] = [ ':TagbarToggle' , 'tagbar']
 let g:which_key_map['n'] = [ ':NERDTreeToggle' , 'nerdtree']
 let g:which_key_map['t'] = [ ':new term://bash' , 'terminal']
+let g:which_key_map['i'] = [ ":call nerdcommenter#Comment(0, 'toggle')<CR>" , 'comment']
 
 call which_key#register('<Space>', "g:which_key_map")
