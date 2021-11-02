@@ -19,9 +19,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'preservim/tagbar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'cespare/vim-toml'
 Plug 'liuchengxu/vim-which-key'
-Plug 'jmcantrell/vim-virtualenv'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -29,7 +27,5 @@ Plug 'airblade/vim-rooter'
 Plug 'honza/vim-snippets'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 call plug#end()

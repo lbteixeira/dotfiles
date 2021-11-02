@@ -8,7 +8,6 @@ source $HOME/.config/nvim/plugin/indent.vim
 source $HOME/.config/nvim/plugin/sneak.vim
 source $HOME/.config/nvim/plugin/coc.vim
 source $HOME/.config/nvim/plugin/vimspector.vim
-source $HOME/.config/nvim/plugin/rainbow.vim
 source $HOME/.config/nvim/plugin/max.vim
 source $HOME/.config/nvim/plugin/vifm.vim
 source $HOME/.config/nvim/plugin/which-key.vim
