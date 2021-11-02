@@ -30,9 +30,13 @@ fi
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/Projects/granoo/install/GranOO/3.0/bin
+export PATH=$PATH:/usr/lib/jvm/java-8-openjdk/bin
+export PATH=$PATH:~/.local/bin/apache-maven-3.8.3/bin
+
+export EDITOR='nvim'
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export STARSHIP_CONFIG=~/.config/starship/config.toml
 export CMAKE_PREFIX_PATH=$HOME/Projects/granoo/install/GranOO/3.0/
-export EDITOR='nvim'
 
 eval "$(starship init bash)"
 
