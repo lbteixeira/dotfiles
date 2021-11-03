@@ -55,7 +55,7 @@ def keys() -> List:
         Key([mod], "f", lazy.spawn("firefox")),
         Key([mod], "z", lazy.spawn("zathura")),
         Key([mod], "q", lazy.spawn("qutebrowser")),
-        Key([mod], "e", lazy.spawn("thunar")),
+        Key([mod], "e", lazy.spawn("pcmanfm")),
 
         Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q set Master 2%+")),
         Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q set Master 2%-")),

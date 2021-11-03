@@ -143,6 +143,8 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'viewnior'},
     {'wmclass': 'ij-ImageJ'},
     {'wmclass': 'Msgcompose'},
+    {'wmclass': 'matplotlib'},
+    {'wmclass': 'pcmanfm'},
     {'wmclass': 'org.gnome.DejaDup'},
     {'wname': 'Enter LaTeX Formula - TexText 1.2.0'},
     {'wname': 'Feed Subscriptions'},
