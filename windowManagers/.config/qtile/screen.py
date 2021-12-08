@@ -4,7 +4,7 @@ from libqtile import bar, widget
 from libqtile.config import Screen
 
 mod = "mod4"
-terminal = "st"
+terminal = "alacritty"
 main_font = "Roboto Mono Nerd Font"
 main_font_bold = "Fira Mono Nerd Font Bold"
 gruv_colors = ["#665c54", "#ebdbb2", "#3b4252", "#fabd2f", "#504945","#fabd2f"]
