@@ -23,12 +23,106 @@
 #		endsnippet
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
-
-
-snippet def "Definition" b
+lis def "Definition"
 \begin{definition}{$1}
   $2
 \end{definition}
-$0
 
+$0
+endsnippet
+
+snippet prob "Problem"
+\begin{problem}{$1}
+  $2
+\end{problem}
+
+$0
+endsnippet
+
+snippet eq "Equation"
+\begin{equation}
+\label{eq:$1}
+  $2
+\end{equation}
+
+$0
+endsnippet
+
+snippet wh "where"
+\noindent{\lowercase{where}} $0
+endsnippet
+
+snippet ta "table"
+\begin{table}[hbt!]
+  \centering
+  \renewcommand{\arraystretch}{1.1}
+  \caption{$1}
+  \begin{tabular}{p{0.3\linewidth}c{0.12\linewidth}}
+   \toprule
+   \textbf{$2} & \textbf{$3} \\
+   \midrule
+   $4 & $5 \\
+   $6 & $7 \\
+  \bottomrule
+  \end{tabular}\label{tab:$8}
+  \renewcommand{\arraystretch}{1}
+\end{table}
+
+$0
+endsnippet
+
+snippet Eq "Equation"
+Equation~\ref{eq:$1}$0
+endsnippet
+
+snippet Fi "Figure"
+Figure~\ref{fig:$1}$0
+endsnippet
+
+snippet Tab "Table"
+Table~\ref{tab:$1}$0
+endsnippet
+
+snippet Lis "Listing"
+Listing~\ref{lis:$1}$0
+endsnippet
+
+snippet code "Code"
+\begin{listing}[hbf!]
+  \caption{$1}
+  \label{lis:$2}
+  \inputminted{${3:lang}}{./snippets/$4.$3}
+\end{listing}
+
+$0
+endsnippet
+
+snippet subf "subfigure"
+\begin{figure}[hbt!]
+  \centering
+  \begin{subfigure}[c]{$1\textwidth}
+    \centering
+    \includegraphics[width=$2\linewidth]{figures/$3}
+    \caption{$4}\label{sfig:$5}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[c]{$6\textwidth}
+    \centering
+    \includegraphics[width=$7\linewidth]{figures/$8}
+    \caption{$9}\label{sfig:$10}
+  \end{subfigure}
+  \caption{$11}\label{fig:$12}
+\end{figure}
+
+$13
+endsnippet
+
+snippet fig "figure"
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[width=${1:1.0}\linewidth]{figures/$2}
+  \caption{$3}\label{fig:$4}
+\end{figure}
+
+$0
 endsnippet
