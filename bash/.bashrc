@@ -30,11 +30,13 @@ fi
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/Projects/granoo/install/GranOO/3.0/bin
-export PATH=$PATH:/usr/lib/jvm/java-8-openjdk/bin
 export PATH=$PATH:~/.local/bin/apache-maven-3.8.3/bin
 
 export EDITOR='nvim'
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export JAVA_HOME=/usr/lib/jvm/jdk-17.0.1
+#export JAVA_HOME=/usr/lib/jvm/jdk-11.0.2
+#export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_311
+export PATH=$JAVA_HOME/bin:$PATH
 export STARSHIP_CONFIG=~/.config/starship/config.toml
 export CMAKE_PREFIX_PATH=$HOME/Projects/granoo/install/GranOO/3.0/
 
