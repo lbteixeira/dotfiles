@@ -50,3 +50,6 @@ set nofoldenable
 set foldmethod=indent
 set foldlevelstart=1
 set foldnestmax=2
+
+"Remove trailing white spaces on save
+autocmd BufWritePre * :%s/\s\+$//e

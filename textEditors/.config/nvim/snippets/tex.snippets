@@ -23,7 +23,7 @@
 #		endsnippet
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
-lis def "Definition"
+snippet def "Definition"
 \begin{definition}{$1}
   $2
 \end{definition}
@@ -59,10 +59,10 @@ snippet ta "table"
   \caption{$1}
   \begin{tabular}{p{0.3\linewidth}c{0.12\linewidth}}
    \toprule
-   \textbf{$2} & \textbf{$3} \\
+   \textbf{$2} & \textbf{$3} \\\
    \midrule
-   $4 & $5 \\
-   $6 & $7 \\
+   $4 & $5 \\\
+   $6 & $7 \\\
   \bottomrule
   \end{tabular}\label{tab:$8}
   \renewcommand{\arraystretch}{1}
@@ -79,12 +79,20 @@ snippet Fi "Figure"
 Figure~\ref{fig:$1}$0
 endsnippet
 
+snippet Fis "Subfigure"
+Figure~\ref{sfig:$1}$0
+endsnippet
+
 snippet Tab "Table"
 Table~\ref{tab:$1}$0
 endsnippet
 
 snippet Lis "Listing"
 Listing~\ref{lis:$1}$0
+endsnippet
+
+snippet Se "Section"
+Section~\ref{sec:$1}$0
 endsnippet
 
 snippet code "Code"
@@ -124,5 +132,15 @@ snippet fig "figure"
   \caption{$3}\label{fig:$4}
 \end{figure}
 
+$0
+endsnippet
+
+snippet sec "section" b
+\section{$1}\label{sec:$2}
+$0
+endsnippet
+
+snippet sub "subsection" b
+\subsection{$1}\label{subsec:$2}
 $0
 endsnippet
