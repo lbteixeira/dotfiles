@@ -28,5 +28,7 @@ Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'mhinz/vim-startify'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'kdheepak/lazygit.nvim'
 
 call plug#end()

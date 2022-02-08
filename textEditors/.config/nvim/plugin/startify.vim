@@ -54,8 +54,10 @@ let g:startify_lists = [
 
 let g:startify_bookmarks = [
                   \ {'t': '~/Projects/thesis/thesis.tex'},
-                  \ {'v': '~/dotfiles/textEditors/.config/nvim/init.vim'} ]
+                  \ {'v': '~/dotfiles/textEditors/.config/nvim/init.vim'},
+                  \ {'b': '~/dotfiles/bash/.bashrc'} ]
 
+nnoremap <Leader>0 :Startify<CR>
 "let g:startify_custom_footer = [
         "\ ' >=> >=>        >=>                                                            ',
         "\ ' >=> >=>        >=>              >>                      >>                    ',

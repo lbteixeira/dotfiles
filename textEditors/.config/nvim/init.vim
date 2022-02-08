@@ -18,6 +18,9 @@ source $HOME/.config/nvim/plugin/tagbar.vim
 source $HOME/.config/nvim/plugin/tree.vim
 source $HOME/.config/nvim/plugin/fzf.vim
 source $HOME/.config/nvim/plugin/polyglot.vim
+source $HOME/.config/nvim/plugin/lazygit.vim
+source $HOME/.config/nvim/plugin/startify.vim
+
 "Source on save
 au! BufWritePost $MYVIMRC source %
 

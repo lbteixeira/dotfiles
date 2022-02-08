@@ -8,4 +8,7 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeWinSize = 25
 let NERDTreeChDirMode = 2
-nnoremap <leader>n :NERDTreeToggle<CR>
+let g:NERDTreeRemoveFileCmd='trash-put '
+
+nnoremap <leader>nc :NERDTreeCWD<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
