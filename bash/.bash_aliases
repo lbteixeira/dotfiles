@@ -64,4 +64,5 @@ alias patch='patch -p1 <'
 alias fshow='sxiv -t *'
 alias stow='stow *'
 alias tar='tar xzfv '
+alias sys='inxi -Fxz'
 
