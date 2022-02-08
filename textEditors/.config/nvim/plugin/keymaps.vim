@@ -24,3 +24,4 @@ nnoremap <S-Tab> :bnext<CR>
 "Copy paste from clipboard
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-p> "+p
+nnoremap <Leader>r :source $MYVIMRC<CR>

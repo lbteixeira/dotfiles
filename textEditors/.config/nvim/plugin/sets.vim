@@ -46,10 +46,18 @@ set shortmess+=c " Don't pass messages to |ins-completion-menu|.
 let g:tex_flavor='latex'
 
 au BufRead * silent! normal zR
-set nofoldenable 
+set nofoldenable
 set foldmethod=indent
 set foldlevelstart=1
 set foldnestmax=2
 
 "Remove trailing white spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+"NERDTree and Startify working at startup
+autocmd VimEnter *
+            \   if !argc()
+            \ |   Startify
+            \ |   NERDTree
+            \ |   wincmd w
+            \ | endif

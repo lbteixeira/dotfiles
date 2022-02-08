@@ -1,4 +1,5 @@
 source $HOME/.config/nvim/plugin/sets.vim
+source $HOME/.config/nvim/plugin/ale.vim
 source $HOME/.config/nvim/plugin/plugins.vim
 source $HOME/.config/nvim/plugin/keymaps.vim
 source $HOME/.config/nvim/plugin/theme.vim
