@@ -10,7 +10,8 @@ noremap <silent> <M-l> :vertical resize +3<CR>
 noremap <silent> <M-j> :resize -3<CR>
 noremap <silent> <M-k> :resize +3<CR>
 
-map <Leader>t :new term://bash<CR>
+map <Leader>th :new term://bash<CR>
+map <Leader>tv :vnew term://bash<CR>
 
 imap jj <Esc>
 nnoremap k gk

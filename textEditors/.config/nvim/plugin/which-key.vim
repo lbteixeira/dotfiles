@@ -57,6 +57,12 @@ let g:which_key_map.n = {
       \ 'c'    : 'cwd'    ,
       \ }
 
+let g:which_key_map.t = {
+      \ 'name' : '+terminal',
+      \ 'h'    : 'horizontal',
+      \ 'v'    : 'vertical'    ,
+      \ }
+
 let g:which_key_map['s'] = [ ':w<CR>' , 'save']
 let g:which_key_map['m'] = [ ':MaximizerToggle' , 'maximize']
 let g:which_key_map['l'] = [ ':TagbarToggle' , 'tagbar']
