@@ -29,15 +29,15 @@ import subprocess
 from typing import List  # noqa: F401
 
 from libqtile import layout, hook
-from libqtile.config import Click, Drag, Group, Key
+from libqtile.config import Click, Drag, Group, Key, Match
 from libqtile.lazy import lazy
 from keys import keys
 from screen import screen
 
 mod = "mod4"
-terminal = "st"
-main_font = "Roboto Mono Nerd Font"
-main_font_bold = "Fira Mono Nerd Font Bold"
+terminal = "alacritty"
+main_font = "JetBrains Mono Nerd Font"
+main_font_bold = "JetBrains Mono Nerd Font Bold"
 
 keys = keys()
 
@@ -120,34 +120,33 @@ dgroups_app_rules = []  # type: List
 follow_mouse_focus = False
 bring_front_click = False
 cursor_warp = False
-floating_layout = layout.Floating(float_rules=[
+floating_layout = layout.Floating(
+    float_rules=[
     # Run the utility of `xprop` to see the wm class and name of an X client.
     *layout.Floating.default_float_rules,
-    {'wmclass': 'confirm'},
-    {'wmclass': 'dialog'},
-    {'wmclass': 'download'},
-    {'wmclass': 'error'},
-    {'wmclass': 'file_progress'},
-    {'wmclass': 'notification'},
-    {'wmclass': 'splash'},
-    {'wmclass': 'toolbar'},
-    {'wmclass': 'confirmreset'},
-    {'wmclass': 'makebranch'},
-    {'wmclass': 'maketag'},
-    {'wname': 'branchdialog'},
-    {'wname': 'pinentry'},
-    {'wmclass': 'ssh-askpass'},
-    {'wmclass': 'nitrogen'},
-    {'wmclass': 'Thunar'},
-    {'wmclass': 'galculator'},
-    {'wmclass': 'viewnior'},
-    {'wmclass': 'ij-ImageJ'},
-    {'wmclass': 'Msgcompose'},
-    {'wmclass': 'matplotlib'},
-    {'wmclass': 'pcmanfm'},
-    {'wmclass': 'org.gnome.DejaDup'},
-    {'wname': 'Enter LaTeX Formula - TexText 1.2.0'},
-    {'wname': 'Feed Subscriptions'},
+    Match(wm_class="confirm"),
+    Match(wm_class="dialog"),
+    Match(wm_class="download"),
+    Match(wm_class="error"),
+    Match(wm_class="file_progress"),
+    Match(wm_class="notification"),
+    Match(wm_class="splash"),
+    Match(wm_class="toolbar"),
+    Match(wm_class="confirmreset"),
+    Match(wm_class="makebranch"),
+    Match(wm_class="maketag"),
+    Match(wm_class="branchdialog"),
+    Match(wm_class="pinentry"),
+    Match(wm_class="ssh-askpass"),
+    Match(wm_class="nitrogen"),
+    Match(wm_class="Thunar"),
+    Match(wm_class="galculator"),
+    Match(wm_class="viewnior"),
+    Match(wm_class="ij-ImageJ"),
+    Match(wm_class="matplotlib"),
+    Match(wm_class="pcmanfm"),
+    Match(wm_class="org.gnome.DejaDup"),
+    Match(wm_class="Enter LaTeX Formula - TexText 1.2.0"),
 ])
 
 auto_fullscreen = True

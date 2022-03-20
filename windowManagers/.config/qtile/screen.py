@@ -5,12 +5,12 @@ from libqtile.config import Screen
 
 mod = "mod4"
 terminal = "alacritty"
-main_font = "Roboto Mono Nerd Font"
-main_font_bold = "Fira Mono Nerd Font Bold"
+main_font = "JetBrains Mono Nerd Font"
+main_font_bold = "JetBrains Mono Nerd Font Bold"
 gruv_colors = ["#665c54", "#ebdbb2", "#3b4252", "#fabd2f", "#504945","#fabd2f"]
 
 def screen() -> Screen:
-    
+
     screen = Screen(
         top=bar.Bar([
             widget.Sep(
@@ -90,7 +90,7 @@ def screen() -> Screen:
                    fontsize = 20),
 
             widget.KeyboardLayout(
-                configured_keyboards=['us', 'br', 'fr'],            
+                configured_keyboards=['us', 'br', 'fr'],
                 foreground = gruv_colors[1],
                 background = gruv_colors[0],
                 padding=5),
