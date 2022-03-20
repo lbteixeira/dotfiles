@@ -32,6 +32,7 @@ window:
   #dimensions:
   #  columns: 0
   #  lines: 0
+  opacity: 0.8
 
   # Window position (changes require restart)
   #
@@ -306,7 +307,6 @@ font:
   #
   #command: None
 
-window.opacity: 0.9
 
 #selection:
   # This string contains all characters that are used as separators for
