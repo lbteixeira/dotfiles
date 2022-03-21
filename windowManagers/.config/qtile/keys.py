@@ -51,7 +51,7 @@ def keys() -> List:
 
         Key([mod], "r", lazy.spawncmd()),
 
-        Key([mod], "p", lazy.spawn("dmenu_run -c")),
+        Key([mod], "p", lazy.spawn("rofi -show run")),
         Key([mod], "f", lazy.spawn("firefox")),
         Key([mod], "z", lazy.spawn("zathura")),
         Key([mod], "q", lazy.spawn("qutebrowser")),
