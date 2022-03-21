@@ -21,6 +21,8 @@ nnoremap <Leader>s :w<CR>
 nnoremap <Leader><Leader> <C-^>
 nnoremap <F6> :set spell!<CR>
 nnoremap <S-Tab> :bnext<CR>
+nnoremap <A-down> :m .+1<CR>
+nnoremap <A-up> :m .-2<CR>
 
 "Copy paste from clipboard
 vnoremap <C-c> "*y :let @+=@*<CR>
