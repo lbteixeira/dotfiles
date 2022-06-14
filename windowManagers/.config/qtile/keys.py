@@ -29,6 +29,7 @@ def keys() -> List:
         Key([mod, "control"], "j", lazy.layout.grow_down()),
         Key([mod, "control"], "k", lazy.layout.grow_up()),
         Key([mod], "n", lazy.layout.normalize()),
+        Key([mod], "0", lazy.window.toggle_floating()),
 
         Key([mod, "mod1"], "h", lazy.layout.swap_column_left()),
         Key([mod, "mod1"], "l", lazy.layout.swap_column_right()),
@@ -55,7 +56,8 @@ def keys() -> List:
         Key([mod], "f", lazy.spawn("firefox")),
         Key([mod], "z", lazy.spawn("zathura")),
         Key([mod], "q", lazy.spawn("qutebrowser")),
-        Key([mod], "e", lazy.spawn("pcmanfm")),
+        Key([mod], "e", lazy.spawn("nautilus")),
+        Key([mod], "o", lazy.spawn("octave --gui")),
         Key([mod], "v", lazy.spawn(terminal + ' -e vifm')),
 
         Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q set Master 2%+")),
@@ -65,7 +67,7 @@ def keys() -> List:
         Key([mod], "equal", lazy.spawn("amixer set 'Master' 5%+")),
         Key([mod], "minus", lazy.spawn("amixer set 'Master' 5%+")),
 
-        Key([mod, "mod1"], "p", lazy.spawn("slock")),
+        Key([mod, "mod1"], "space", lazy.spawn("slock")),
         ]
 
     return keys

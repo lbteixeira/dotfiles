@@ -30,5 +30,6 @@ Plug 'dense-analysis/ale'
 Plug 'mhinz/vim-startify'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kdheepak/lazygit.nvim'
+Plug 'ap/vim-css-color'
 
 call plug#end()

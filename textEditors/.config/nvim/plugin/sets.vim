@@ -45,11 +45,12 @@ set shortmess+=c " Don't pass messages to |ins-completion-menu|.
 "Always open latex files correctly
 let g:tex_flavor='latex'
 
-au BufRead * silent! normal zR
-set nofoldenable
-set foldmethod=indent
-set foldlevelstart=1
-set foldnestmax=2
+au BufRead * silent! normal zM
+"set nofoldenable
+set foldmethod=marker
+set foldmarker=/**,*/
+"set foldlevelstart=1
+"set foldnestmax=2
 
 "Remove trailing white spaces on save
 autocmd BufWritePre * :%s/\s\+$//e

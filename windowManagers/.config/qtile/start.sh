@@ -1,4 +1,3 @@
 #!/bin/bash
 
-setxkbmap -option caps:ctrl_modifier
-
+setxkbmap -option caps:ctrl_modifier &

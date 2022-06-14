@@ -66,9 +66,19 @@ for i in groups:
 
 gruv_colors = ["#665c54", "#ebdbb2", "#3b4252", "#fabd2f", "#504945"]
 
+dark = "#282C34"
+red = "#E06C75"
+green = "#98C379"
+yellow = "#E5C07B"
+blue = "#61AFEF"
+purple = "#C678DD"
+gray = "#ABB2BF"
+
+colors = [dark, red, green, yellow, blue, purple, gray]
+
 layouts = [
     layout.Columns(border_width=2, margin=5, margin_on_single=5, \
-                   border_focus=gruv_colors[1], border_normal=gruv_colors[0], \
+                   border_focus=blue, border_normal=gray, \
                    insert_position=1, border_on_single=True),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
@@ -91,9 +101,11 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
-screen1 = screen()
-screen2 = screen()
+screen1 = screen(colors)
+screen2 = screen(colors)
+# screen3 = screen()
 
+# screens = [screen1, screen2, screen3]
 screens = [screen1, screen2]
 
 # Drag floating layouts.
@@ -145,8 +157,11 @@ floating_layout = layout.Floating(
     Match(wm_class="ij-ImageJ"),
     Match(wm_class="matplotlib"),
     Match(wm_class="pcmanfm"),
+    Match(wm_class="org.gnome.Nautilus"),
     Match(wm_class="org.gnome.DejaDup"),
     Match(wm_class="Enter LaTeX Formula - TexText 1.2.0"),
+    Match(wm_class="blueman-manager"),
+    Match(wm_class="pavucontrol"),
 ])
 
 auto_fullscreen = True

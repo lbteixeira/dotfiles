@@ -29,8 +29,11 @@ fi
 # Include directories to PATH
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/go/bin
 export PATH=$PATH:$HOME/Projects/granoo/install/GranOO/3.0/bin
 export PATH=$PATH:~/.local/bin/apache-maven-3.8.3/bin
+export PATH=$PATH:/usr/local/include/catch2
+export PATH=$PATH:/usr/local/include/ImageMagick-7
 
 export EDITOR='nvim'
 export JAVA_HOME=/usr/lib/jvm/jdk-17.0.1
@@ -42,9 +45,10 @@ export CMAKE_PREFIX_PATH=$HOME/Projects/granoo/install/GranOO/3.0/
 
 eval "$(starship init bash)"
 
-export WORKON_HOME=~/.venv/
+export WORKON_HOME=~/.venv
+export PROJECT_HOME=~/Projects
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=~/.local/bin/virtualenv
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
 source ~/.local/bin/virtualenvwrapper.sh
 
 . "$HOME/.cargo/env"

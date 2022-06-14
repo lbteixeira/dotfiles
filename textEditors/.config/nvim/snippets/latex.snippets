@@ -1,0 +1,205 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet def "Definition"
+\begin{definition}{$1}
+  $2
+\end{definition}
+
+$0
+endsnippet
+
+snippet prob "Problem"
+\begin{problem}{$1}
+  $2
+\end{problem}
+
+$0
+endsnippet
+
+snippet eq "Equation"
+\begin{equation}
+\label{eq:$1}
+  $2
+\end{equation}
+
+$0
+endsnippet
+
+snippet wh "where" b
+\noindent{\lowercase{where}} $0
+endsnippet
+
+snippet ta "table" b
+\begin{table}[hbt!]
+  \centering
+  \renewcommand{\arraystretch}{1.1}
+  \caption{$1}
+  \begin{tabular}{p{0.3\linewidth}c{0.12\linewidth}}
+   \toprule
+   \textbf{$2} & \textbf{$3} \\\
+   \midrule
+   $4 & $5 \\\
+   $6 & $7 \\\
+  \bottomrule
+  \end{tabular}\label{tab:$8}
+  \renewcommand{\arraystretch}{1}
+\end{table}
+
+$0
+endsnippet
+
+snippet Eq "Equation"
+Equation~\ref{eq:$1}$0
+endsnippet
+
+snippet Fi "Figure"
+Figure~\ref{fig:$1}$0
+endsnippet
+
+snippet Fis "Subfigure"
+Figure~\ref{sfig:$1}$0
+endsnippet
+
+snippet Cha "Chapter" A
+Chapter~\ref{chap:$1}$0
+endsnippet
+
+snippet Tab "Table"
+Table~\ref{tab:$1}$0
+endsnippet
+
+snippet Lis "Listing"
+Listing~\ref{lis:$1}$0
+endsnippet
+
+snippet Se "Section"
+Section~\ref{sec:$1}$0
+endsnippet
+
+snippet Alg "Algorithm"
+Algorithm~\ref{alg:$1}$0
+endsnippet
+
+snippet code "Code" b
+\begin{listing}[hbf!]
+  \caption{$1}
+  \label{lis:$2}
+  \inputminted{${3:lang}}{./snippets/$4.$3}
+\end{listing}
+
+$0
+endsnippet
+
+snippet suf "subfigure" b
+\begin{figure}[hbt!]
+  \centering
+  \begin{subfigure}[c]{$1\textwidth}
+    \centering
+    \includegraphics[width=$2\linewidth]{figures/$3}
+    \caption{$4}\label{sfig:$5}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[c]{$6\textwidth}
+    \centering
+    \includegraphics[width=$7\linewidth]{figures/$8}
+    \caption{$9}\label{sfig:$10}
+  \end{subfigure}
+  \caption{$11}\label{fig:$12}
+\end{figure}
+
+$13
+endsnippet
+
+snippet fig "figure" b
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[width=${1:1.0}\linewidth]{figures/$2}
+  \caption{$3}\label{fig:$4}
+\end{figure}
+
+$0
+endsnippet
+
+snippet sec "section" b
+\section{$1}\label{sec:$2}
+$0
+endsnippet
+
+snippet sub "subsection" b
+\subsection{$1}\label{subsec:$2}
+$0
+endsnippet
+
+snippet alg "algorithm" b
+\begin{algorithm}[hbt!]
+\caption{$1}
+  \begin{algorithmic}[1]
+    \State{$2}
+  \end{algorithmic}\label{alg:$3}
+\end{algorithm}
+$0
+endsnippet
+
+snippet use "usepackage" b
+\usepackage{$1}$0
+endsnippet
+
+snippet item "itemize" b
+\begin{itemize}
+  \item $1
+\end{itemize}
+$0
+endsnippet
+
+snippet enum "enumerate" b
+\begin{enumerate}
+  \item $1
+\end{enumerate}
+$0
+endsnippet
+
+snippet meq "Multi-equation"
+\begin{equation}
+\label{eq:$1}
+\begin{aligned}
+    $2 & = $3 \\
+    $4 & = $5 \\
+\end{aligned}
+\end{equation}
+$0
+endsnippet
+
+snippet \pa "Parencite"
+\parencite{$1} $0
+endsnippet
+
+snippet \tex "Textcite"
+\textcite{$1} $0
+endsnippet
+
+snippet \deg "Degrees"
+$1~\textdegree{C} $0
+endsnippet

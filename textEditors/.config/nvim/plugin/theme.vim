@@ -25,7 +25,7 @@ if (has("autocmd") && !has("gui_running"))
 endif
 
 let g:onedark_color_overrides = {
-\ "comment_grey": {"gui": "#ecffc5", "cterm": "227", "cterm16": "0" },
+\ "comment_grey": {"gui": "#b3ccc0", "cterm": "227", "cterm16": "0" },
 \}
 
 colorscheme onedark
